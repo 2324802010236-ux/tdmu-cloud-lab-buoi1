@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Hello Cloud - Cloud Computing Lab 1</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 650px;
+      text-align: center;
+      padding: 45px 30px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .cloud {
+      font-size: 70px;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin: 15px 0;
+    }
+
+    .subtitle {
+      color: #bfdbfe;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .info {
+      margin: 30px 0;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      line-height: 1.9;
+    }
+
+    button {
+      background: #38bdf8;
+      color: #082f49;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      padding: 14px 26px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #7dd3fc;
+    }
+
+    #result {
+      margin-top: 22px;
+      color: #86efac;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 35px;
+      font-size: 13px;
+      color: #cbd5e1;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <div class="cloud">☁️</div>
+
+    <h1>Hello Cloud!</h1>
+
+    <p class="subtitle">
+      Welcome to Cloud Computing Lab 1
+      <br>
+      Website deployed with GitHub Pages
+    </p>
+
+    <div class="info">
+      <strong>THỰC HÀNH ĐIỆN TOÁN ĐÁM MÂY</strong>
+      <br>
+      Buổi 1: GitHub, Hello Cloud API và GitHub Pages
+      <br>
+      Sinh viên: Huỳnh Hoàng Huy
+      <br>
+      MSSV: 2324802010236
+      <br>
+      Nền tảng: GitHub Codespaces & GitHub Pages
+    </div>
+
+    <button onclick="showMessage()">
+      Test Hello Cloud
+    </button>
+
+    <p id="result"></p>
+
+    <footer>
+      Cloud Computing Lab 1 - TDMU
+      <br>
+      Powered by GitHub Pages
+    </footer>
+  </main>
+
+  <script>
+    function showMessage() {
+      document.getElementById("result").textContent =
+        "Hello Cloud! Website is working successfully.";
+    }
+  </script>
+</body>
+</html>
