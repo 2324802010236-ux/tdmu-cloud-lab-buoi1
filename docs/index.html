@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài 1 - Điện toán đám mây | TDMU</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      color: #1e293b;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a, #1d4ed8);
+      color: white;
+      text-align: center;
+      padding: 55px 20px;
+    }
+
+    header h1 {
+      margin: 10px 0;
+      font-size: 36px;
+    }
+
+    header p {
+      color: #dbeafe;
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: 30px auto;
+      padding: 0 18px;
+    }
+
+    section {
+      background: white;
+      padding: 28px;
+      margin-bottom: 24px;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+      color: #1d4ed8;
+      border-bottom: 2px solid #dbeafe;
+      padding-bottom: 10px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 13px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #1e40af;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    .success {
+      color: #15803d;
+      font-weight: bold;
+    }
+
+    .info {
+      background: #eff6ff;
+      border-left: 4px solid #2563eb;
+      padding: 14px 18px;
+      border-radius: 6px;
+      margin-top: 15px;
+    }
+
+    .nist-item {
+      padding: 15px;
+      margin: 12px 0;
+      background: #f8fafc;
+      border-left: 4px solid #3b82f6;
+      border-radius: 6px;
+    }
+
+    .nist-item strong {
+      color: #1d4ed8;
+    }
+
+    a {
+      color: #1d4ed8;
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      text-align: center;
+      background: #0f172a;
+      color: white;
+      padding: 25px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div style="font-size: 55px;">☁️</div>
+    <h1>HELLO CLOUD</h1>
+    <p>BÀI 1 - LẬP TRÌNH TRÊN MÁY ẢO ĐÁM MÂY ĐẦU TIÊN</p>
+    <p>Thực hành Điện toán đám mây - TDMU</p>
+  </header>
+
+  <main class="container">
+
+    <section>
+      <h2>1. Thông tin sinh viên</h2>
+      <p><strong>Họ và tên:</strong> Huỳnh Hoàng Huy</p>
+      <p><strong>MSSV:</strong> 2324802010236</p>
+      <p><strong>Môn học:</strong> Điện toán đám mây</p>
+      <p><strong>Ngày thực hành:</strong> 05/11/2026</p>
+      <p><strong>Nền tảng:</strong> GitHub Codespaces và GitHub Pages</p>
+    </section>
+
+    <section>
+      <h2>2. Kết quả thực hiện API Hello Cloud</h2>
+
+      <p>
+        Em đã sử dụng GitHub Codespaces để tạo môi trường
+        lập trình trực tuyến và xây dựng API bằng Node.js
+        kết hợp Express. API hoạt động trên cổng 3000
+        và trả về các thông tin của môi trường đám mây.
+      </p>
+
+      <div class="info">
+        <p><strong>Thông tin API đã kiểm tra:</strong></p>
+        <p>Host: codespaces-f93cf0</p>
+        <p>Hệ điều hành: Linux 6.8.0-1064-azure</p>
+        <p>CPU logic: 2</p>
+        <p>RAM: 7.8 GB</p>
+        <p>Thời gian kiểm tra: 05/11/2026</p>
+        <p class="success">Kết quả: API hoạt động thành công.</p>
+      </div>
+
+      <p>
+        API đã được kiểm tra thành công từ trình duyệt
+        trên máy tính và điện thoại. Sau khi thử truy cập
+        công khai, cổng 3000 đã được chuyển lại về Private
+        để bảo đảm an toàn.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Bảng so sánh máy cá nhân và GitHub Codespaces</h2>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Tiêu chí</th>
+              <th>Máy cá nhân</th>
+              <th>GitHub Codespaces</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Thời gian từ khi bắt đầu đến khi chạy node -v</td>
+              <td>Chưa đo; môi trường máy cá nhân có sẵn</td>
+              <td>Chưa ghi nhận thời gian khởi tạo ban đầu</td>
+            </tr>
+            <tr>
+              <td>CPU</td>
+              <td>AMD Ryzen 5 7235HS, 4 nhân / 8 luồng</td>
+              <td>2 CPU logic theo API</td>
+            </tr>
+            <tr>
+              <td>RAM</td>
+              <td>20 GB DDR5 (19.7 GB sử dụng được)</td>
+              <td>7.8 GB theo API</td>
+            </tr>
+            <tr>
+              <td>Hệ điều hành</td>
+              <td>Windows 11 Home Single Language 25H2</td>
+              <td>Linux, kernel 6.8.0-1064-azure</td>
+            </tr>
+            <tr>
+              <td>Cách truy cập từ thiết bị khác</td>
+              <td>Cần cấu hình kết nối mạng và dịch vụ</td>
+              <td>Qua URL chuyển tiếp cổng 3000, thử Public rồi chuyển Private</td>
+            </tr>
+            <tr>
+              <td>Chi phí và cách đo</td>
+              <td>Chi phí thiết bị, điện năng và bảo trì</td>
+              <td>GitHub Billing Usage: 0.49 GB-month lưu trữ; gross $0.03; billed $0.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        <em>
+          Số liệu được ghi nhận từ Task Manager,
+          API Hello Cloud và GitHub Billing Usage.
+          Thời gian khởi tạo chưa được đo thực tế
+          nên không sử dụng số liệu ước lượng.
+        </em>
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Năm đặc tính điện toán đám mây theo NIST</h2>
+
+      <div class="nist-item">
+        <strong>1. On-demand Self-service - Tự phục vụ theo yêu cầu</strong>
+        <p>
+          Em tự tạo và khởi chạy GitHub Codespaces thông qua
+          trình duyệt mà không cần yêu cầu quản trị viên
+          cấp phát máy thủ công.
+        </p>
+      </div>
+
+      <div class="nist-item">
+        <strong>2. Broad Network Access - Truy cập mạng rộng</strong>
+        <p>
+          Em truy cập API qua URL của Codespaces trên máy tính
+          và điện thoại thông qua Internet, minh họa khả năng
+          sử dụng dịch vụ từ nhiều thiết bị khác nhau.
+        </p>
+      </div>
+
+      <div class="nist-item">
+        <strong>3. Resource Pooling - Gộp tài nguyên</strong>
+        <p>
+          Codespaces cung cấp môi trường với 2 CPU logic
+          và 7.8 GB RAM từ hạ tầng do nhà cung cấp quản lý.
+          Đây là ví dụ về việc khai thác tài nguyên từ
+          hạ tầng dùng chung thay vì sử dụng trực tiếp
+          phần cứng máy cá nhân.
+        </p>
+      </div>
+
+      <div class="nist-item">
+        <strong>4. Rapid Elasticity - Co giãn nhanh</strong>
+        <p>
+          Môi trường Codespaces có thể được tạo, khởi động
+          và dừng theo nhu cầu. Việc này minh họa khả năng
+          cấp phát và thu hồi môi trường nhanh chóng.
+          Bài thực hành chưa kiểm thử tự động tăng giảm
+          tài nguyên theo tải.
+        </p>
+      </div>
+
+      <div class="nist-item">
+        <strong>5. Measured Service - Dịch vụ đo lường được</strong>
+        <p>
+          Em sử dụng GitHub Billing Usage để theo dõi
+          tài nguyên lưu trữ và chi phí. Tại thời điểm
+          kiểm tra, hệ thống ghi nhận 0.49 GB-month,
+          chi phí trước ưu đãi $0.03 và số tiền
+          được tính phí là $0.00.
+        </p>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>5. Thống kê sử dụng tài nguyên đám mây</h2>
+
+      <div class="table-wrap">
+        <table>
+          <tr>
+            <th>Thông số</th>
+            <th>Kết quả</th>
+          </tr>
+          <tr>
+            <td>Dịch vụ</td>
+            <td>GitHub Codespaces</td>
+          </tr>
+          <tr>
+            <td>Kỳ báo cáo</td>
+            <td>01/11 - 30/11/2026</td>
+          </tr>
+          <tr>
+            <td>Ngày ghi nhận</td>
+            <td>05/11/2026</td>
+          </tr>
+          <tr>
+            <td>Mức sử dụng lưu trữ</td>
+            <td>0.49 GB-month</td>
+          </tr>
+          <tr>
+            <td>Đơn giá lưu trữ</td>
+            <td>$0.07 / GB-month</td>
+          </tr>
+          <tr>
+            <td>Chi phí trước ưu đãi</td>
+            <td>$0.03</td>
+          </tr>
+          <tr>
+            <td>Chi phí được tính</td>
+            <td>$0.00</td>
+          </tr>
+        </table>
+      </div>
+
+      <p>
+        Kết quả cho thấy việc sử dụng tài nguyên Codespaces
+        được ghi nhận và theo dõi thông qua hệ thống Billing.
+        Ở thời điểm kiểm tra, tài khoản chưa phát sinh
+        khoản phí phải thanh toán.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Kết luận</h2>
+
+      <p>
+        Qua bài thực hành, em đã sử dụng GitHub Codespaces
+        để triển khai môi trường Node.js trên đám mây,
+        xây dựng API Hello Cloud bằng Express, kiểm tra
+        truy cập từ điện thoại và thu thập thông số tài nguyên.
+      </p>
+
+      <p>
+        Việc so sánh với máy cá nhân giúp em nhận thấy
+        ưu điểm của môi trường đám mây trong khả năng
+        cấp phát, truy cập và quản lý tài nguyên.
+        Đồng thời, các thao tác thực tế giúp em hiểu rõ hơn
+        năm đặc tính điện toán đám mây theo NIST.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Liên kết sản phẩm</h2>
+
+      <p>
+        <strong>GitHub Repository:</strong>
+        <a href="https://github.com/2324802010236-ux/tdmu-cloud-lab-buoi1">
+          Xem mã nguồn bài thực hành
+        </a>
+      </p>
+
+      <p>
+        <strong>GitHub Pages:</strong>
+        <a href="https://2324802010236-ux.github.io/tdmu-cloud-lab-buoi1/">
+          Xem website kết quả
+        </a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>THỰC HÀNH ĐIỆN TOÁN ĐÁM MÂY - TDMU</p>
+    <p>Huỳnh Hoàng Huy - 2324802010236</p>
+    <p>GitHub Codespaces & GitHub Pages</p>
+  </footer>
+
+</body>
+</html>

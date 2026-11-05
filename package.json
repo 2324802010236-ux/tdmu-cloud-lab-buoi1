@@ -1,0 +1,14 @@
+{
+  "name": "tdmu-cloud-lab-buoi1",
+  "version": "1.0.0",
+  "description": "Hello Cloud API - Cloud Computing Lab 1",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
